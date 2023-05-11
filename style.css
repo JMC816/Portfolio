@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    animation: gradient 15s ease infinite;
+    background-size: 400% 400%;
+    height: 100vh;
+    overflow-y: hidden;
+    margin: 0;
+    padding: 0;
+ }
+ 
+  @keyframes gradient {
+     0% {
+         background-position: 0% 50%;
+     }
+     50% {
+         background-position: 100% 50%;
+     }
+     100% {
+         background-position: 0% 50%;
+     }
+  }
+ 
+ .main {
+     width: 1000px;
+     height: 400px;
+     margin: 5% auto;
+     display: flex;
+ }
+ 
+ .name {
+     width: 600px;
+     height: 400px;
+     text-align:left;
+ }
+ 
+ #charactor  {
+     animation: motion 2.5s ease infinite ;
+     top: 30%;
+     left: 20%;
+     position: relative;
+     
+ }
+ 
+ @keyframes motion {
+     0% {
+         margin-top: 0;
+     }
+     50% {
+         margin-top: 15px;
+     }
+     100% {
+         margin-top: 0;
+     }
+ }
+ 
+ .textStyle1 {
+     background-color: black;
+     color: white;
+     border-radius: 8px;
+     
+ }
+ 
+ .textStyle2 {
+     background-color: black;
+     color: white;
+     border-radius: 8px;
+     text-decoration: 5px underline yellow;
+ }
