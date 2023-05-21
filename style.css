@@ -20,7 +20,7 @@ body {
      }
   }
  
- .main {
+ #main {
      width: 1000px;
      height: 400px;
      margin: 5% auto;
@@ -65,4 +65,18 @@ body {
      color: white;
      border-radius: 8px;
      text-decoration: 5px underline yellow;
+ }
+
+ .disappear {
+    animation: fadeout 2s;
+    animation-fill-mode: forwards;
+ }
+
+ @keyframes fadeout {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
  }
